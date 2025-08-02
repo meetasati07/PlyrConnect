@@ -154,7 +154,42 @@ body {
 /* Feed */
 
 .feed {
-  border: 5px solid black;
-  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  padding: 40px;
+  border: 1px solid black;
+  border-radius: 30px;
   margin: 10px 10px 0px 175px;
+  color: white;
+}
+
+.feed p {
+  font-size: 20px;
+}
+
+.reactions {
+  display: flex;
+  font-size: 30px;
+}
+.reactions .bi {
+  margin: 10px;
+}
+
+.comment {
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  padding: 14px;
+  border-radius: 15px;
+  width: 200px;
+}
+.comment > input {
+  font-size: 25px;
+  color: white;
+  outline: none;
+  border: none;
+  background: transparent;
+  flex: 1;
 }
