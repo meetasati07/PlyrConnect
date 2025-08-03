@@ -7,24 +7,19 @@ body {
   background-color: #1a2a6c !important;
 }
 
-/* #myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+.main {
+  display: grid;
+  grid-template-columns: 1fr 3fr 550px;
+  grid-template-rows: auto 1fr;
+  gap: 5px;
+  min-height: 100vh;
+  overflow: hidden;
 }
-
-.container {
-  position: fixed;
-  width: 100%;
-  padding: 20px;
-} */
 
 /* Header */
 
 .header {
-  margin: 20px;
+  grid-column: span 3;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -44,7 +39,7 @@ body {
 .search {
   width: max-content;
   display: flex;
-  align-items: center; 
+  align-items: center;
   padding: 14px;
   border-radius: 28px;
   background-color: #f6f6f6;
@@ -77,12 +72,15 @@ body {
   color: white;
 }
 
+/* Main */
+
 /* SideBar */
 .sidebar {
   display: flex;
   flex-direction: column;
   width: 400px;
-  height: 100vh;
+  height: auto; /* Change from 100vh to auto */
+  min-height: calc(100vh - 120px);
   /* border: 5px solid black; */
 }
 .new-post {
@@ -112,16 +110,17 @@ body {
   color: white;
 }
 
-.bi-plus-lg{
-    padding: 10px;
-    font-size: 40px;
+.bi-plus-lg {
+  padding: 10px;
+  font-size: 40px;
 }
 .navigate {
   position: relative;
   display: flex;
   flex-direction: column;
   margin: 40px 0px 40px 60px;
-  height: 100vh;
+  height: auto;
+  flex: 1;
 }
 .navigate .button {
   position: relative;
@@ -148,6 +147,98 @@ body {
 .navigate > .logout {
   position: absolute;
   bottom: 0;
+  height: 100px;
 }
 
+/* Feed */
 
+.feed {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  padding: 40px;
+  border: 1px solid black;
+  border-radius: 30px;
+  margin: 10px 10px 25px 175px;
+  color: white;
+}
+
+.feed h1{
+  color: #ffec4e;
+}
+.feed p {
+  font-size: 20px;
+}
+
+.reactions {
+  display: flex;
+  font-size: 30px;
+}
+.reactions .bi {
+  margin: 10px;
+}
+
+.comment {
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  padding: 14px;
+  border-radius: 15px;
+  width: 200px;
+}
+.comment > input {
+  font-size: 25px;
+  color: white;
+  outline: none;
+  border: none;
+  background: transparent;
+  flex: 1;
+}
+
+/* Trending */
+
+.trending-suggested {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.trending-sec {
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 350px;
+  height: 340px;
+  margin: 50px;
+  padding: 22px;
+}
+
+.trending-title, .suggested-title {
+  color: #ffec4e;
+}
+.trends {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.trends button, .suggestions button {
+  font-size: 25px;
+  background-color: #3b38a0;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 22px;
+  color: white;
+  padding: 14px;
+  align-items: flex-start;
+  text-align: left;
+  margin: 10px 0px;
+  height: max-content;
+}
+.suggested-sec {
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 350px;
+  height: max-content;
+  margin: 50px;
+  padding: 22px;
+}
