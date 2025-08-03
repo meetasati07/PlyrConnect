@@ -20,7 +20,6 @@ body {
 
 .header {
   grid-column: span 3;
-  margin-top: 20px;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -161,10 +160,13 @@ body {
   padding: 40px;
   border: 1px solid black;
   border-radius: 30px;
-  margin: 10px 10px 0px 175px;
+  margin: 10px 10px 25px 175px;
   color: white;
 }
 
+.feed h1{
+  color: #ffec4e;
+}
 .feed p {
   font-size: 20px;
 }
@@ -192,4 +194,51 @@ body {
   border: none;
   background: transparent;
   flex: 1;
+}
+
+/* Trending */
+
+.trending-suggested {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.trending-sec {
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 350px;
+  height: 340px;
+  margin: 50px;
+  padding: 22px;
+}
+
+.trending-title, .suggested-title {
+  color: #ffec4e;
+}
+.trends {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.trends button, .suggestions button {
+  font-size: 25px;
+  background-color: #3b38a0;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 22px;
+  color: white;
+  padding: 14px;
+  align-items: flex-start;
+  text-align: left;
+  margin: 10px 0px;
+  height: max-content;
+}
+.suggested-sec {
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 350px;
+  height: max-content;
+  margin: 50px;
+  padding: 22px;
 }
