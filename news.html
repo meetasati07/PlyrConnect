@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlyrConnect - Gaming News</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="main">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <p>PlyrConnect</p>
+            </div>
+            <div class="search">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Search news">
+            </div>
+            <div class="notify-profile">
+                <button class="button"><i class="bi bi-bell"></i></button>
+                <button class="button"><i class="bi bi-person-circle"></i></button>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="new-post">
+                <button class="post">
+                    <i class="bi bi-plus-lg"></i>
+                    New Post
+                </button>
+            </div>
+            <div class="navigate">
+                <button class="button">
+                    <i class="bi bi-house"></i>
+                    Home
+                </button>
+                <button class="button">
+                    <i class="bi bi-chat-dots"></i>
+                    Forums
+                </button>
+                <button class="button active">
+                    <i class="bi bi-newspaper"></i>
+                    News
+                </button>
+                <button class="button logout">
+                    <i class="bi bi-box-arrow-left"></i>
+                    Logout
+                </button>
+            </div>
+        </div>
+
+        <!-- News Content -->
+        <div class="news-container">
+            <div class="news-header">
+                <h1>Gaming News</h1>
+                <div class="news-filter">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">PC</button>
+                    <button class="filter-btn">Console</button>
+                    <button class="filter-btn">Mobile</button>
+                    <button class="filter-btn">Esports</button>
+                </div>
+            </div>
+            
+            <div class="featured-news">
+                <div class="featured-article">
+                    <div class="featured-image">
+                        <div class="placeholder-img">
+                            <i class="bi bi-image"></i>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <span class="news-category">BREAKING</span>
+                        <h2>GTA 6 Official Release Date Confirmed for 2026</h2>
+                        <p>Rockstar Games finally announces the official release date for Grand Theft Auto VI, ending years of speculation and rumors...</p>
+                        <div class="news-meta">
+                            <span><i class="bi bi-clock"></i> 2 hours ago</span>
+                            <span><i class="bi bi-person"></i> PlyrConnect Staff</span>
+                            <span><i class="bi bi-eye"></i> 15,432 views</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image">
+                        <div class="placeholder-img">
+                            <i class="bi bi-image"></i>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-tag">INDIE</span>
+                        <h3>India Announces New 3D Game Similar to Black Myth Wukong</h3>
+                        <p>Indian gaming studio reveals their upcoming action RPG that promises to rival international titles...</p>
+                        <div class="news-footer">
+                            <span class="news-time">4 hours ago</span>
+                            <div class="news-actions">
+                                <button><i class="bi bi-heart"></i> 234</button>
+                                <button><i class="bi bi-chat"></i> 45</button>
+                                <button><i class="bi bi-share"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-image">
+                        <div class="placeholder-img">
+                            <i class="bi bi-image"></i>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-tag">CONSOLE</span>
+                        <h3>PlayStation 6 Development Rumors Surface</h3>
+                        <p>Industry insiders hint at Sony's next-generation console being in early development stages...</p>
+                        <div class="news-footer">
+                            <span class="news-time">6 hours ago</span>
+                            <div class="news-actions">
+                                <button><i class="bi bi-heart"></i> 156</button>
+                                <button><i class="bi bi-chat"></i> 23</button>
+                                <button><i class="bi bi-share"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-image">
+                        <div class="placeholder-img">
+                            <i class="bi bi-image"></i>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-tag">ESPORTS</span>
+                        <h3>World Gaming Championship 2025 Begins</h3>
+                        <p>The biggest esports tournament of the year kicks off with record prize pools and viewership...</p>
+                        <div class="news-footer">
+                            <span class="news-time">8 hours ago</span>
+                            <div class="news-actions">
+                                <button><i class="bi bi-heart"></i> 89</button>
+                                <button><i class="bi bi-chat"></i> 12</button>
+                                <button><i class="bi bi-share"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-image">
+                        <div class="placeholder-img">
+                            <i class="bi bi-image"></i>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-tag">REVIEW</span>
+                        <h3>Latest AAA Game Receives Mixed Reviews</h3>
+                        <p>Critics and players are divided on the newest blockbuster release, citing both innovations and shortcomings...</p>
+                        <div class="news-footer">
+                            <span class="news-time">12 hours ago</span>
+                            <div class="news-actions">
+                                <button><i class="bi bi-heart"></i> 67</button>
+                                <button><i class="bi bi-chat"></i> 34</button>
+                                <button><i class="bi bi-share"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Trending Section -->
+        <div class="trending-suggested">
+            <div class="trending-sec">
+                <h1 class="trending-title">Trending Topics</h1>
+                <div class="trends">
+                    <button>#GTA6</button>
+                    <button>#PlayStation6</button>
+                    <button>#IndieGaming</button>
+                    <button>#Esports2025</button>
+                </div>
+            </div>
+            
+            <div class="suggested-sec">
+                <h1 class="suggested-title">Popular Today</h1>
+                <div class="suggestions">
+                    <button>GTA 6 Release News</button>
+                    <button>Indian Gaming Industry Growth</button>
+                    <button>Console Wars Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
