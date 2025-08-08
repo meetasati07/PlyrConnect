@@ -30,92 +30,30 @@
           <button class="button notify">
             <i class="bi bi-bell"></i>
           </button>
-          <!-- Add this just after the bell icon in your header -->
-          <div
-            class="notification-menu"
-            id="notifMenu"
-            style="
-              display: none;
-              position: absolute;
-              top: 80px;
-              right: 170px;
-              width: 340px;
-              background: #212b79;
-              border-radius: 15px;
-              box-shadow: 0 10px 40px rgba(0, 0, 0, 0.18);
-              border: 1px solid #3b38a0;
-              z-index: 99;
-            "
-          >
+          <div class="notification-menu" id="notifMenu">
             <ul style="list-style: none; margin: 0; padding: 18px">
               <li
                 style="margin-bottom: 18px; color: #ffec4e; font-weight: bold"
               >
                 Notifications
               </li>
-              <li style="margin-bottom: 14px; color: white">
-                <i
-                  class="bi bi-info-circle"
-                  style="color: #ffec4e; padding-right: 7px"
-                ></i>
-                Rockstar confirms GTA 6 release:
-                <span style="color: #b2b0e8">2026</span>
-                <span style="font-size: 0.85em; float: right; color: #b2b0e8"
-                  >2h ago</span
-                >
-              </li>
-              <li style="margin-bottom: 14px; color: white">
-                <i
-                  class="bi bi-chat-dots"
-                  style="color: #3b38a0; padding-right: 7px"
-                ></i>
-                New comment on your post!
-                <span style="font-size: 0.85em; float: right; color: #b2b0e8"
-                  >5m ago</span
-                >
-              </li>
-              <li style="margin-bottom: 14px; color: white">
-                <i
-                  class="bi bi-person"
-                  style="color: #3b38a0; padding-right: 7px"
-                ></i>
-                IndieGameDev followed you.
-                <span style="font-size: 0.85em; float: right; color: #b2b0e8"
-                  >1d ago</span
-                >
+              <li>
+                <i class="bi bi-info-circle"></i>
+                Rockstar confirms GTA 6 release: 2026
+                <span>2h ago</span>
               </li>
               <li>
-                <button
-                  style="
-                    background: #3b38a0;
-                    color: white;
-                    border: none;
-                    border-radius: 8px;
-                    padding: 7px 24px;
-                    margin-top: 12px;
-                    float: right;
-                  "
-                >
-                  View All
-                </button>
+                <i class="bi bi-chat-dots"></i>
+                New comment on your post!
+                <span>5m ago</span>
+              </li>
+              <li>
+                <i class="bi bi-person"></i>
+                IndieGameDev followed you.
+                <span>1d ago</span>
               </li>
             </ul>
           </div>
-          <script>
-            // Toggle notification dropdown
-            document
-              .querySelector(".bi-bell")
-              .addEventListener("click", function (e) {
-                e.stopPropagation();
-                const menu = document.getElementById("notifMenu");
-                menu.style.display =
-                  menu.style.display === "none" ? "block" : "none";
-              });
-            // Close menu if clicked outside
-            document.body.addEventListener("click", function () {
-              document.getElementById("notifMenu").style.display = "none";
-            });
-          </script>
           <button class="button profile">
             <i class="bi bi-person"></i>
           </button>
@@ -202,5 +140,6 @@
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
