@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlyrConnect - Create New Post</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="main">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <p>PlyrConnect</p>
+            </div>
+            <div class="search">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="notify-profile">
+                <button class="button"><i class="bi bi-bell"></i></button>
+                <button class="button"><i class="bi bi-person-circle"></i></button>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="new-post">
+                <button class="post active">
+                    <i class="bi bi-plus-lg"></i>
+                    New Post
+                </button>
+            </div>
+            <div class="navigate">
+                <button class="button">
+                    <i class="bi bi-house"></i>
+                    Home
+                </button>
+                <button class="button">
+                    <i class="bi bi-chat-dots"></i>
+                    Forums
+                </button>
+                <button class="button">
+                    <i class="bi bi-newspaper"></i>
+                    News
+                </button>
+                <button class="button logout">
+                    <i class="bi bi-box-arrow-left"></i>
+                    Logout
+                </button>
+            </div>
+        </div>
+
+        <!-- New Post Form -->
+        <div class="newpost-container">
+            <div class="newpost-form">
+                <h1>Create New Post</h1>
+                
+                <form>
+                    <div class="post-type">
+                        <button type="button" class="type-btn active" data-type="text">
+                            <i class="bi bi-file-text"></i>
+                            Text
+                        </button>
+                        <button type="button" class="type-btn" data-type="image">
+                            <i class="bi bi-image"></i>
+                            Image
+                        </button>
+                        <button type="button" class="type-btn" data-type="video">
+                            <i class="bi bi-play-circle"></i>
+                            Video
+                        </button>
+                    </div>
+                    
+                    <div class="input-field">
+                        <input type="text" placeholder="Post title..." class="title-input">
+                    </div>
+                    
+                    <div class="input-field">
+                        <select class="category-select">
+                            <option value="">Select Category</option>
+                            <option value="gaming">Gaming</option>
+                            <option value="gow">God of War</option>
+                            <option value="lastofus">The Last of Us</option>
+                            <option value="gta">GTA</option>
+                            <option value="general">General Discussion</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-field">
+                        <textarea placeholder="What's on your mind?" class="content-input"></textarea>
+                    </div>
+                    
+                    <div class="media-upload" id="mediaUpload" style="display: none;">
+                        <div class="upload-area">
+                            <i class="bi bi-cloud-upload"></i>
+                            <p>Drag & drop your file here or click to browse</p>
+                            <input type="file" id="fileInput" accept="image/*,video/*">
+                        </div>
+                    </div>
+                    
+                    <div class="post-options">
+                        <div class="tags-input">
+                            <input type="text" placeholder="Add tags (separated by commas)">
+                        </div>
+                        <label class="spoiler-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Mark as spoiler
+                        </label>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" class="cancel-btn">Cancel</button>
+                        <button type="submit" class="submit-btn">Post</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Trending Section -->
+        <div class="trending-suggested">
+            <div class="trending-sec">
+                <h1 class="trending-title">Trending</h1>
+                <div class="trends">
+                    <button>#gaming</button>
+                    <button>#gow</button>
+                    <button>#lastofus</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
