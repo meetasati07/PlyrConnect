@@ -1,0 +1,100 @@
+.profile-container {
+  max-width: 650px;
+  margin: 50px auto;
+  background: rgba(59, 56, 160, 0.3);
+  border: 1px solid #3b38a0;
+  border-radius: 25px;
+  padding: 35px;
+  color: white;
+}
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #3b38a0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 58px;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(59, 56, 160, 0.2);
+}
+.profile-details h2 {
+  color: #ffec4e;
+  font-size: 2em;
+}
+.profile-details .username {
+  color: #b2b0e8;
+  font-size: 1.2em;
+  margin-bottom: 12px;
+}
+.profile-details .bio {
+  font-style: italic;
+  line-height: 1.6;
+  color: #dcdced;
+}
+.stats-row {
+  display: flex;
+  gap: 40px;
+  margin: 32px 0 0 0;
+}
+.stat-block {
+  background: #3b38a0;
+  border-radius: 12px;
+  padding: 15px 28px;
+  text-align: center;
+}
+.stat-block .num {
+  color: #ffec4e;
+  font-weight: bold;
+  font-size: 1.65em;
+}
+.stat-block .label {
+  color: #b2b0e8;
+  font-size: 0.98em;
+  margin-top: 4px;
+}
+.profile-actions {
+  margin-top: 38px;
+  display: flex;
+  gap: 18px;
+}
+.profile-actions button {
+  background: #3b38a0;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 12px 30px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.profile-actions button:hover {
+  background: #2d2a7a;
+}
+.recent-activity {
+  margin-top: 50px;
+}
+.recent-activity h3 {
+  color: #ffec4e;
+  margin-bottom: 12px;
+  font-size: 1.2em;
+}
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.activity-item {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 9px;
+  padding: 16px;
+  color: #dcdced;
+}

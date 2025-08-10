@@ -1,0 +1,147 @@
+.newpost-container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  color: white;
+}
+
+.newpost-form {
+  background: rgba(59, 56, 160, 0.3);
+  border: 1px solid #3b38a0;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.newpost-form h1 {
+  color: #ffec4e;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.post-type {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.type-btn {
+  background: transparent;
+  border: 1px solid #3b38a0;
+  border-radius: 10px;
+  color: #b2b0e8;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.type-btn.active,
+.type-btn:hover {
+  background: #3b38a0;
+  color: white;
+}
+
+.input-field {
+  margin-bottom: 20px;
+}
+
+.title-input,
+.category-select {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #3b38a0;
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+  font-size: 16px;
+}
+
+.title-input::placeholder {
+  color: #b2b0e8;
+}
+
+.content-input {
+  width: 100%;
+  min-height: 150px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #3b38a0;
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+  font-size: 16px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.content-input::placeholder {
+  color: #b2b0e8;
+}
+
+.media-upload {
+  margin-bottom: 20px;
+}
+
+.upload-area {
+  border: 2px dashed #3b38a0;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  color: #b2b0e8;
+  cursor: pointer;
+}
+
+.upload-area i {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.post-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.tags-input input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #3b38a0;
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  width: 300px;
+}
+
+.spoiler-checkbox {
+  display: flex;
+  align-items: center;
+  color: #b2b0e8;
+  cursor: pointer;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.cancel-btn,
+.submit-btn {
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: transparent;
+  border: 1px solid #3b38a0;
+  color: #b2b0e8;
+}
+
+.submit-btn {
+  background: #3b38a0;
+  border: 1px solid #3b38a0;
+  color: white;
+}

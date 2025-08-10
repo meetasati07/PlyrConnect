@@ -1,0 +1,144 @@
+.login-container {
+  grid-column: span 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 120px);
+  padding: 40px;
+}
+
+.login-form {
+  background: rgba(59, 56, 160, 0.3);
+  border: 1px solid #3b38a0;
+  border-radius: 20px;
+  padding: 40px;
+  width: 400px;
+  text-align: center;
+}
+
+.login-form h1 {
+  color: #ffec4e;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.login-form > p {
+  color: #b2b0e8;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.input-group i {
+  color: #b2b0e8;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.input-group input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  flex: 1;
+}
+
+.input-group input::placeholder {
+  color: #b2b0e8;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  color: #b2b0e8;
+  cursor: pointer;
+}
+
+.checkbox-container input {
+  margin-right: 8px;
+}
+
+.forgot-password {
+  color: #ffec4e;
+  text-decoration: none;
+}
+
+.login-btn {
+  width: 100%;
+  background: #3b38a0;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.login-btn:hover {
+  background: #2d2a7a;
+}
+
+.signup-link p {
+  color: #b2b0e8;
+}
+
+.signup-link a {
+  color: #ffec4e;
+  text-decoration: none;
+}
+
+.social-login {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #3b38a0;
+}
+
+.social-login p {
+  color: #b2b0e8;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #3b38a0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.social-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

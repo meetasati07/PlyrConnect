@@ -1,0 +1,28 @@
+#notifMenu {
+  display: none;
+  position: absolute;
+  top: 80px;
+  right: 170px;
+  width: 340px;
+  background: #212b79;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.18);
+  border: 1px solid #3b38a0;
+  z-index: 99;
+}
+
+.notification-menu li {
+  margin-bottom: 14px;
+  color: white;
+}
+
+.notification-menu li i {
+  color: #e3da4a;
+  padding-right: 7px;
+}
+
+.notification-menu li span {
+  font-size: 0.85em;
+  float: right;
+  color: #b2b0e8;
+}
